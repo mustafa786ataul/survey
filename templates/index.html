@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class="d-flex justify-content-center">
+<div>
+<h3> Choose your respective designation </h3>
+</div>
+</div>
+<div class="d-flex justify-content-center" >
+
+ <form class="border-class">
+    <div class="form-group"> 
+		<a href="{{url_for('login_emp')}}"<button type="button" class="btn btn-primary btn-lg btn-block btn-huge" >Users/Employees</button></a>
+	</div>	
+    <div class="form-group"> 
+		<a href="{{url_for('login_lm')}}"<button type="button" class="btn btn-primary btn-lg btn-block btn-huge">Leads/Managers</button></a>
+	</div>	
+ </form>
+</div>
+{% endblock %}
